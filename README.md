@@ -1,13 +1,13 @@
 
 
-###     LPIC2-homelab: a mini lab implementation with some basic services
-----------------------------------------------------------------------
+##     LPIC2-homelab: a mini lab implementation with some basic services
 
-## Network Diagram
+
+### Network Diagram
 ----------------------------------------------------------------------
-## Assets
+### Assets
 ----------------------------------------------------------------------
-## Addresses
+### Addresses
 ----------------------------------------------------------------------
-## Role & Services
+### Role & Services
 ----------------------------------------------------------------------
