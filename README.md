@@ -14,7 +14,7 @@ there are 2 separate physical mchines,
 
  `win11` and `mate24`
  
-<img width="1793" height="556" alt="diagram" src="https://github.com/user-attachments/assets/e977a6fd-8e6a-4f20-9118-1e40e8a774d3" />
+<img width="1792" height="553" alt="diagram" src="https://github.com/user-attachments/assets/fc54b388-f0b4-4a2d-bbf7-0c715bd1bf7e" />
 
  
 
