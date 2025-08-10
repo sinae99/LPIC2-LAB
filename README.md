@@ -28,11 +28,10 @@ all VMs are in NAT mode and they can communicate with others via statis routes a
 this is a basic visual diagram of the lab:
 
 
-<img width="1722" height="766" alt="diagram2" src="https://github.com/user-attachments/assets/d1c219a1-c9ab-48c9-b07d-a8ddcaa397a5" />
+<img width="1721" height="802" alt="diagram2png" src="https://github.com/user-attachments/assets/3fcb73a9-349a-416a-b59a-e0abc623efc3" />
 
 
-----------------------------------------------------------------------
-### Network Connections
+
 ----------------------------------------------------------------------
 ### Services and Confs
 <details>
