@@ -18,8 +18,19 @@ there are 2 separate physical mchines,
 
 
  
-
+----------------------------------------------------------------------
 ### Network Architecture
+
+2 main machines are connected to each other via a home router and get their IP addresses from it.
+
+all VMs are in NAT mode and they can communicate with others via statis routes and port forwarding.
+
+this is a basic visual diagram of the lab:
+
+
+<img width="1722" height="766" alt="diagram2" src="https://github.com/user-attachments/assets/d1c219a1-c9ab-48c9-b07d-a8ddcaa397a5" />
+
+
 ----------------------------------------------------------------------
 ### Network Connections
 ----------------------------------------------------------------------
@@ -28,7 +39,6 @@ there are 2 separate physical mchines,
 <summary>DNS (Bind)</summary>
   
 - create zone
-<img width="737" height="422" alt="image" src="https://github.com/user-attachments/assets/bd8f00e4-70ec-4565-92ab-0d1ae9f69dde" />
 
 
 </details>
