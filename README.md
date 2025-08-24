@@ -4,7 +4,7 @@
 
 ### Intro
 
-Setting up and creating a virtual network system that simulates a real-world company, including core services such as DNS, web server, NTP, authentication server, and FTP, along with Splunk and Suricata.
+Setting up and creating a virtual network system that simulates a real-world company, including core services such as DNS, web server, NTP, authentication server, and FTP, along with Suricata (and Splunk in next phases).
 
 ----------------------------------------------------------------------
 
@@ -14,7 +14,8 @@ there are 2 separate physical mchines,
 
  `win11` and `mate24`
  
-<img width="1638" height="502" alt="diagram1" src="https://github.com/user-attachments/assets/baafdc4d-90fb-4eca-8175-9636c51e1c2b" />
+<img width="1677" height="567" alt="diagram" src="https://github.com/user-attachments/assets/466cb22d-f021-44b3-89ac-5b12473c3dfa" />
+
 
 
  
@@ -28,7 +29,6 @@ all VMs are in NAT mode and they can communicate with others via statis routes a
 this is a basic visual diagram of the lab:
 
 
-<img width="1721" height="802" alt="diagram2png" src="https://github.com/user-attachments/assets/3fcb73a9-349a-416a-b59a-e0abc623efc3" />
 
 
 
