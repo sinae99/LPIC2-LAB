@@ -1,6 +1,6 @@
 
 
-##    My Final Homelab
+##    My Homelab
 
 ### Intro
 
@@ -28,6 +28,7 @@ all VMs are in NAT mode and they can communicate with others via statis routes a
 
 this is a basic visual diagram of the lab:
 
+<img width="1890" height="693" alt="diagram" src="https://github.com/user-attachments/assets/f714d68b-01de-4877-b4c9-398640ebd88b" />
 
 
 
