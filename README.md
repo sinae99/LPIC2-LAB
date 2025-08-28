@@ -4,7 +4,7 @@
 
 ## Intro
 
-Setting up and creating a virtual network system that simulates a real-world company, including core services such as DNS, web server, NTP, authentication server, and FTP, along with Suricata (and Splunk in next phases).
+Setting up and creating a virtual network system that simulates a real-world company, including core services such as DNS, web server, NTP, authentication server, and FTP, along with Suricata .
 
 ----------------------------------------------------------------------
 
