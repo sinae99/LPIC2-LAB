@@ -1,5 +1,5 @@
 
-### Project FAILED - uncompleted repo
+
 
 
 
@@ -15,7 +15,8 @@ there are 2 separate physical mchines,
 
  `win11` and `mate24`
  
-<img width="1677" height="567" alt="diagram" src="https://github.com/user-attachments/assets/466cb22d-f021-44b3-89ac-5b12473c3dfa" />
+
+<img width="1390" height="567" alt="assest list" src="https://github.com/user-attachments/assets/d6e9776d-7bc1-4b5b-a198-0b1061191809" />
 
 
 
@@ -25,7 +26,7 @@ there are 2 separate physical mchines,
 
 2 main machines are connected to each other via a home router and get their IP addresses from it.
 
-all VMs are in NAT mode and they can communicate with others via statis routes and port forwarding.
+all VMs are in Bridged mode (home router is acting as DHCP server) and they can communicate with each other.
 
 this is a basic visual diagram of the lab:
 
