@@ -39,60 +39,26 @@ this is a basic visual diagram of the lab:
 
 ----------------------------------------------------------------------
 ## Services and Confs
-<details>
-<summary>DNS (Bind)</summary>
-  
-- create zone
+
+just only a brief summary of configs and settings and test for each machine and service:
+
+### MATE24 (192.168.1.200)
+
+#### SAMBA Server 
+
+`/etc/samba/smb.conf` :
+
+<img width="415" height="182" alt="smb conf" src="https://github.com/user-attachments/assets/5292c9fc-2a62-44cb-9ce5-9880fb4c7ec3" />
+
+after modifying the share object, its time to create the `smbuser` and set password for that with `smbpasswd` command, 
+
+and then a test file and permission and user check:
+
+<img width="555" height="145" alt="smbuser" src="https://github.com/user-attachments/assets/ed8d7b17-b983-4458-a64a-68d66daab143" />
 
 
-</details>
+<img width="638" height="206" alt="tree -pug" src="https://github.com/user-attachments/assets/12077199-3cd8-486d-a16f-cdd1e082a0b6" />
 
-<details>
-<summary>shared files (Samba)</summary>
-  
-- Configure `/etc/samba/smb.conf` to create a shared directory.
-
-- Set up user accounts and permissions for accessing the shared folder.
-
-- Ensure the Samba service is running and enabled to start on boot.
-
-
-  
-- create zone
-
-- create db files
-
-</details>
-
-<details>
-  
-<summary>web server (Nginx)</summary>
-  
-- create zone
-
-- create db files
-
-</details>
-
-<details>
-  
-<summary>NTP</summary>
-  
-- create zone
-
-- create db files
-
-</details>
-
-<details>
-  
-<summary>Authentication server (LDAP)</summary>
-  
-- create zone
-
-- create db files
-
-</details>
 
 
 ----------------------------------------------------------------------
