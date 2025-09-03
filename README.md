@@ -26,11 +26,15 @@ there are 2 separate physical mchines,
 
 2 main machines are connected to each other via a home router and get their IP addresses from it.
 
-all VMs are in Bridged mode (home router is acting as DHCP server) and they can communicate with each other.
+all VMs are in Bridged mode (home router is acting as DHCP server) and they can communicate with each other in `192.168.1.x` .
 
 this is a basic visual diagram of the lab:
 
-<img width="1890" height="693" alt="diagram" src="https://github.com/user-attachments/assets/f714d68b-01de-4877-b4c9-398640ebd88b" />
+<img width="1782" height="713" alt="diagram" src="https://github.com/user-attachments/assets/0cda909a-a3c1-4b52-9b24-6f4b5ac85714" />
+
+(Blue lines: Virtual Machines)
+
+(Red lines: Physical Hosts)
 
 
 
