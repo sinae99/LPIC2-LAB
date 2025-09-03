@@ -44,7 +44,9 @@ just only a brief summary of configs and settings and test for each machine and 
 
 ### MATE24 (192.168.1.200)
 
-#### SAMBA Server 
+<details> 
+ 
+<summary> SAMBA Server </summary>
 
 `/etc/samba/smb.conf` :
 
@@ -58,6 +60,23 @@ and then a test file and permission and user check:
 
 
 <img width="638" height="206" alt="tree -pug" src="https://github.com/user-attachments/assets/12077199-3cd8-486d-a16f-cdd1e082a0b6" />
+
+now verify connection and do some change from windows side:
+
+<img width="638" height="458" alt="win check" src="https://github.com/user-attachments/assets/5d80d717-68cb-40fe-ad13-855d5a449afe" />
+
+and after entering the credential for smbuser:
+
+<img width="872" height="438" alt="test windows side" src="https://github.com/user-attachments/assets/c91e8880-4e11-4dfb-943f-fead6e7d3428" />
+
+and now once again to check the upload from windows side:
+
+<img width="1550" height="467" alt="test linux side" src="https://github.com/user-attachments/assets/cabe2325-03b6-440d-a892-d0e3457c2663" />
+
+now, file server is ready.
+
+
+</details>
 
 
 
