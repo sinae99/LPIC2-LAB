@@ -42,11 +42,49 @@ this is a basic visual diagram of the lab:
 
 just only a brief summary of configs and settings and test for each machine and service:
 
-### MATE24 (192.168.1.200)
+### win11 (192.168.1.100)
 
 <details> 
  
-<summary> SAMBA Server </summary>
+<summary> Control Node </summary>
+
+</details>
+
+
+### ubuntu1web (192.168.1.10)
+
+<details> 
+ 
+<summary> Nginx </summary>
+
+
+</details> 
+
+
+### ubuntu2dns (192.168.1.20)
+
+<details> 
+ 
+<summary> BIND </summary>
+
+</details> 
+
+### ubuntu3auth (192.168.1.30)
+
+<details> 
+ 
+<summary> LDAP </summary>
+
+</details> 
+
+
+
+
+### mate24 (192.168.1.200)
+
+<details> 
+ 
+<summary> SAMBA  </summary>
 
 `/etc/samba/smb.conf` :
 
@@ -77,6 +115,22 @@ now, file server is ready.
 
 
 </details>
+
+
+
+<details> 
+ 
+<summary> Suricata </summary>
+
+</details> 
+
+<details> 
+ 
+<summary> NTP </summary>
+
+</details> 
+
+
 
 
 
