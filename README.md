@@ -37,30 +37,6 @@ this is a basic visual diagram of the lab:
 (Red lines: Physical Hosts)
 
 
-
-### Virtual Network Layer :
-
-virtualBox "Host-Only Network" creates the core isolated network segment for the VMs, and the host machine acts as a router and gateway, providing internet access to users.
-
-to provide internet for my network (`10.10.100.1`), Internet Connection Sharing (ICS) in win11 is enabled and also the `IPEnableRoute` registry key is set to 1.
-
-
-
-<img width="1025" height="215" alt="image" src="https://github.com/user-attachments/assets/02cd9b9a-51dd-4427-9602-98984388858c" />
-
-
-
-<img width="935" height="556" alt="image" src="https://github.com/user-attachments/assets/c942ce23-607b-47a2-9937-3d8012d89964" />
-
-
-The host's physical Wi-Fi adapter shares its internet connection with the VirtualBox Host-Only adapter (10.10.100.1).
-
-so finally network traffic follows this path:
-
-`ubuntu (10.10.100.10) → win11 Gateway (10.10.100.1) → Windows ICS Routing → Physical Wi-Fi Adapter → Home Router → Internet` 
-
-
-
 ----------------------------------------------------------------------
 ## Services and Confs
 <details>
