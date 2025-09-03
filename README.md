@@ -43,6 +43,7 @@ this is a basic visual diagram of the lab:
 just only a brief summary of configs and settings and test for each machine and service:
 
 ### win11 (192.168.1.100)
+----------------------------------------------------------------------
 
 <details> 
  
@@ -52,6 +53,7 @@ just only a brief summary of configs and settings and test for each machine and 
 
 
 ### ubuntu1web (192.168.1.10)
+----------------------------------------------------------------------
 
 <details> 
  
@@ -63,9 +65,35 @@ just only a brief summary of configs and settings and test for each machine and 
 
 ### ubuntu2dns (192.168.1.20)
 
-<details> 
+<details>
  
 <summary> BIND </summary>
+
+my lab zone name is `slab`.
+
+`named.conf.local`:
+
+
+<img width="672" height="260" alt="zones" src="https://github.com/user-attachments/assets/a5029b56-a958-4026-af78-23f1ba8ce117" />
+
+
+`db.slab` for resolving IPs and `db.192` for reverse queries.
+
+then, database files:
+
+`db.slab`:
+
+<img width="710" height="496" alt="dbslab" src="https://github.com/user-attachments/assets/b62343a6-22e9-4b1b-b0ed-875df60ec407" />
+
+`db.192`:
+
+<img width="765" height="532" alt="db192" src="https://github.com/user-attachments/assets/321069fc-fa8e-45a9-b924-cb49f8ca8939" />
+
+and now, a check for config and db files:
+
+<img width="1106" height="320" alt="check" src="https://github.com/user-attachments/assets/9d1108b7-3163-4032-993f-03afc39e26d8" />
+
+
 
 </details> 
 
