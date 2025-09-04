@@ -43,7 +43,7 @@ this is a basic visual diagram of the lab:
 just only a brief summary of configs and settings and test for each machine and service:
 
 ### win11 (192.168.1.100)
-----------------------------------------------------------------------
+
 
 <details> 
  
@@ -53,7 +53,7 @@ just only a brief summary of configs and settings and test for each machine and 
 
 
 ### ubuntu1web (192.168.1.10)
-----------------------------------------------------------------------
+
 
 <details> 
  
@@ -64,6 +64,7 @@ just only a brief summary of configs and settings and test for each machine and 
 
 
 ### ubuntu2dns (192.168.1.20)
+
 
 <details>
  
@@ -94,10 +95,26 @@ and now, a check for config and db files:
 <img width="1106" height="320" alt="check" src="https://github.com/user-attachments/assets/9d1108b7-3163-4032-993f-03afc39e26d8" />
 
 
+now a test from other machines, for example from 192.168.1.10:
+
+<img width="665" height="775" alt="test1" src="https://github.com/user-attachments/assets/c5e39727-7ac4-428b-9ddf-ecce5ce35624" />
+
+or with a basic script to test them all at once: 
+
+<img width="737" height="502" alt="test3" src="https://github.com/user-attachments/assets/a61f1011-1522-447a-9186-f27c60a04aed" />
+
+or from win11:
+
+
+<img width="942" height="390" alt="test2" src="https://github.com/user-attachments/assets/fabf8f50-3642-40b1-b395-f42cfa8d8391" />
+
+Name Server is ready.
+
 
 </details> 
 
 ### ubuntu3auth (192.168.1.30)
+
 
 <details> 
  
@@ -107,8 +124,9 @@ and now, a check for config and db files:
 
 
 
-
+----------------------------------------------------------------------
 ### mate24 (192.168.1.200)
+
 
 <details> 
  
@@ -162,4 +180,4 @@ now, file server is ready.
 
 
 
-----------------------------------------------------------------------
+
