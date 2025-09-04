@@ -140,6 +140,7 @@ after modifying the share object, its time to create the `smbuser` and set passw
 
 and then a test file and permission and user check:
 
+
 <img width="555" height="145" alt="smbuser" src="https://github.com/user-attachments/assets/ed8d7b17-b983-4458-a64a-68d66daab143" />
 
 
@@ -157,7 +158,11 @@ and now once again to check the upload from windows side:
 
 <img width="1550" height="467" alt="test linux side" src="https://github.com/user-attachments/assets/cabe2325-03b6-440d-a892-d0e3457c2663" />
 
-now, file server is ready.
+and another check from another machine:
+
+<img width="1216" height="402" alt="test2 linux side" src="https://github.com/user-attachments/assets/5cf0dc4a-164b-4462-bd6f-88d6b07f2d79" />
+
+File Server is ready.
 
 
 </details>
