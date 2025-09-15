@@ -59,6 +59,84 @@ just only a brief summary of configs and settings and test for each machine and 
  
 <summary> Nginx </summary>
 
+i have 3 sample websites to test and configure:
+
+1 - sina-personal-page.slab
+
+2 - webtest.slab
+
+3 - nginx-default.slab
+
+html files at `/var/www`:
+
+<img width="472" height="170" alt="varwww" src="https://github.com/user-attachments/assets/56ffcc47-5c0a-4afc-8add-ab8a16e78dc1" />
+
+
+
+config files at `/etc/nginx/sites-available`:
+
+<img width="853" height="176" alt="availabe" src="https://github.com/user-attachments/assets/03cbdea3-9f2f-491f-b596-35241c2daa3b" />
+
+
+server blockes foreach virtual host:
+
+
+<img width="702" height="330" alt="sinaconf" src="https://github.com/user-attachments/assets/aab52327-7123-40a7-8013-d2a79e19a2e1" />
+
+and like this for other ones.
+
+i used `server_name` directive to get help from my DNS server because all hosts are serving at 192.168.1.10.
+
+`access_log` and `error_log` for logging and to be used by syslog in next phases.
+
+and location block for matching specific URIs. (in case of not found URI it will return 404)
+
+
+creating sym link for sites and enabling them:
+
+<img width="1448" height="222" alt="enable" src="https://github.com/user-attachments/assets/010d9b01-e919-4289-ac73-5addf3c05d56" />
+
+now final conf check:
+
+<img width="827" height="151" alt="check" src="https://github.com/user-attachments/assets/9c9b6c87-5e68-4840-9f69-0e086e7ea1e2" />
+
+configs looks good, now time to check the sites.
+
+because im using ubuntu server i dont have GUI so i use `lynx` to view my sites in terminal:
+
+<img width="616" height="125" alt="lynx" src="https://github.com/user-attachments/assets/3573e729-50cb-47cc-9669-22411baf2b97" />
+
+`sina-personal-page.slab`
+ 
+<img width="1290" height="935" alt="sina" src="https://github.com/user-attachments/assets/4c2efaad-6d1d-4487-ac23-dc37cf1b688b" />
+
+`nginx-default.slab`
+
+<img width="1595" height="528" alt="nginx" src="https://github.com/user-attachments/assets/253c9348-1c9f-440c-8d6c-29871439d477" />
+
+
+`webtest.slab`
+
+<img width="1577" height="508" alt="webtest" src="https://github.com/user-attachments/assets/4f3c8acf-828b-4598-a043-89d8b69fe641" />
+
+
+now a check from my other machine with GUI:
+
+
+
+<img width="1140" height="542" alt="sinaa" src="https://github.com/user-attachments/assets/659395dc-358a-4fb0-8728-9c919b49f99a" />
+
+
+<img width="1352" height="430" alt="nginx" src="https://github.com/user-attachments/assets/01e3828b-0028-4cef-8344-5907e6491745" />
+
+
+<img width="781" height="280" alt="webtest" src="https://github.com/user-attachments/assets/2c10f6b2-8be6-4a57-a35d-c81ff19d9e3a" />
+
+
+Web Server is ready.
+
+
+
 
 </details> 
 
