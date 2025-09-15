@@ -227,7 +227,9 @@ i must create a logical structure for organizing users and groups, so i need a L
 
 and now :
 
-`ldapadd -x -D "cn=admin,dc=slab" -W -f base.ldif`.
+```
+ldapadd -x -D "cn=admin,dc=slab" -W -f base.ldif
+```
 
 `-x`: to enable simple auth instead of other ways
 
@@ -321,7 +323,9 @@ other `.ldif` files to add users to groups:
 
 using the `ldapsearch` command to search and retrieve information from LDAP server and final check:
 
-`ldapsearch -x -W -D "cn=admin,dc=slab" -b "dc=slab"` :
+```
+ldapsearch -x -W -D "cn=admin,dc=slab" -b "dc=slab"
+```
 
 <img width="772" height="670" alt="check1" src="https://github.com/user-attachments/assets/f14fd9fb-2a77-4914-8abf-f20b17f9c74c" />
 
