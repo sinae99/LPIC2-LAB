@@ -198,6 +198,148 @@ Name Server is ready.
  
 <summary> LDAP </summary>
 
+
+
+
+### server side
+----------------------------------------------------------------------------------------------------------
+
+after installing the OpenLDAP packages, `slapd` & `ldap-utils`, i run  `dpkg-reconfigure slapd` command to renew the configs.
+
+then defining my hierarchy:
+
+**Key LDAP Values:**
+
+DNS Domain Name ---> `slab`
+
+Organization Name ---> `SLAB`
+
+Database Backend ---> `MDB` (Modern Database)
+
+
+**Organizational Units (OU):**
+
+i must create a logical structure for organizing users and groups, so i need a LDIF (LDAP Data Interchange Format) file:
+
+`base.ldif`:
+
+<img width="502" height="220" alt="base" src="https://github.com/user-attachments/assets/0aa1b0b6-433e-472a-bc53-cb45c5ee2f0c" />
+
+and now :
+
+`ldapadd -x -D "cn=admin,dc=slab" -W -f base.ldif`.
+
+`-x`: to enable simple auth instead of other ways
+
+`-D "cn=admin,dc=slab"` : to specify the DN (Distinguished Name) and the name of the user who is performing the command
+
+`-W` : ask password for DN
+
+`-f base.ldif` : read from base.ldif file
+
+now my directory is set up.
+
+
+
+**Users and Groups:**
+
+i have 4 groups and 5 users for my lab:
+
+**groups** ---> webadmins, itadmins, fileusers, devs
+
+
+
+**users** ---> sina, jay, s-admin, user1, user2
+
+
+
+each of users and groups has its own .ldif file:
+
+
+<img width="561" height="463" alt="treegu" src="https://github.com/user-attachments/assets/5e58f8cb-4e71-415f-8056-4911c1f58ae4" />
+
+
+
+<img width="697" height="365" alt="groups" src="https://github.com/user-attachments/assets/a55bad7e-938d-40d1-a12c-5fae605f15b7" />
+
+
+
+<img width="723" height="677" alt="users" src="https://github.com/user-attachments/assets/16c40ec9-83cd-4c0d-945c-24b8818d29a2" />
+
+
+object classes that i used:
+
+`inetOrgPerson` : a fundamental object class for representing people within an organization
+
+`cn` : Common Name, user full name
+
+`sn` : Surname, user last name
+
+----------
+
+
+`posixAccount` : for integrating LDAP users with Linux based systems
+
+`uid` :  user login name
+
+`uidNumber` : unique numerical ID for the user 
+
+`gidNumber` : primary group number for the user
+
+`homeDirectory` : path to the user home directory
+
+`loginShell` : default shell for the user
+
+----------
+
+
+`shadowAccount` : for more advanced password management
+
+`shadowLastChange` : date of the last password change
+
+`shadowMax` : maximum number of days a password is valid before it expires
+
+----------
+
+
+
+
+
+
+other `.ldif` files to add users to groups:
+
+
+
+<img width="900" height="527" alt="add" src="https://github.com/user-attachments/assets/fa288e40-74ed-4f86-b7ab-7b358761b94c" />
+
+
+
+
+
+**Verifying the Directory:**
+
+
+using the `ldapsearch` command to search and retrieve information from LDAP server and final check:
+
+`ldapsearch -x -W -D "cn=admin,dc=slab" -b "dc=slab"` :
+
+<img width="772" height="670" alt="check1" src="https://github.com/user-attachments/assets/f14fd9fb-2a77-4914-8abf-f20b17f9c74c" />
+
+
+<img width="731" height="688" alt="check2" src="https://github.com/user-attachments/assets/9ff91540-b921-4ed3-b38e-5e179d7dd482" />
+
+
+Server side is ready.
+
+
+### Client side
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 </details> 
 
 
