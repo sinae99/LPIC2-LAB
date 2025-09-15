@@ -11,7 +11,7 @@ Setting up and creating a virtual network system that simulates a real-world com
 
 ## Roles and Assets List
 
-there are 2 separate physical mchines,
+there are 2 separate physical machines,
 
  `win11` and `mate24`
  
@@ -78,7 +78,7 @@ config files at `/etc/nginx/sites-available`:
 <img width="853" height="176" alt="availabe" src="https://github.com/user-attachments/assets/03cbdea3-9f2f-491f-b596-35241c2daa3b" />
 
 
-server blockes foreach virtual host:
+server blocks for each virtual host:
 
 
 <img width="702" height="330" alt="sinaconf" src="https://github.com/user-attachments/assets/aab52327-7123-40a7-8013-d2a79e19a2e1" />
