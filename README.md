@@ -50,6 +50,44 @@ just only a brief summary of configs and settings and test for each machine and 
  
 <summary> Control Node </summary>
 
+
+This is my main machine, serving as the central control node for my lab and also running my virtual servers.
+
+im using WSL to have better connectivity with my machines.
+
+WSL, by default, is in a private network created by Windows, but I need it to be in the same network as my nodes, so I set it to **Mirrored**:
+
+for this i must change (or add) `.wslconfig` file:
+
+
+
+<img width="585" height="258" alt="wslconfi" src="https://github.com/user-attachments/assets/934cd872-c7d7-4008-a116-ac0ab6e7b8fe" />
+
+
+
+now WSL has the same ip address as my Windows 11:
+
+
+
+<img width="1380" height="692" alt="ip" src="https://github.com/user-attachments/assets/b72f269a-2dbc-47e3-9696-c6af24fc8e96" />
+
+
+
+
+I use **MobaXterm** to access all of my nodes by establishing SSH connections:
+
+
+
+<img width="1679" height="896" alt="mobaxterm" src="https://github.com/user-attachments/assets/612f13fc-c335-4167-8c2a-9c3c67d4826b" />
+
+
+
+
+
+
+
+
+
 </details>
 
 
