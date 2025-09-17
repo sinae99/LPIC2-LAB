@@ -51,9 +51,13 @@ just only a brief summary of configs and settings and test for each machine and 
 <summary> Control Node </summary>
 
 
-This is my main machine, serving as the central control node for my lab and also running my virtual servers.
+This is my main machine, 
+
+serving as the central control node for my lab and also running my virtual servers.
+
 
 im using WSL to have better connectivity with my machines.
+
 
 WSL, by default, is in a private network created by Windows, but I need it to be in the same network as my nodes, so I set it to **Mirrored**:
 
@@ -76,9 +80,15 @@ now WSL has the same ip address as my Windows 11:
 
 I use **MobaXterm** to access all of my nodes by establishing SSH connections:
 
+*virtual machines:*
+
+<img width="1678" height="898" alt="mobaxterm2" src="https://github.com/user-attachments/assets/af15803a-5a50-4acc-b755-68005fb55537" />
 
 
-<img width="1679" height="896" alt="mobaxterm" src="https://github.com/user-attachments/assets/612f13fc-c335-4167-8c2a-9c3c67d4826b" />
+*physical machines:*
+
+<img width="1679" height="525" alt="mobaxterm3" src="https://github.com/user-attachments/assets/8eccee8c-fb53-4d38-9fe9-9f5f6416fd07" />
+
 
 
 
