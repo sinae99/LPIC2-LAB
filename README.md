@@ -16,7 +16,7 @@ there are 2 separate physical machines,
  `win11` and `mate24`
  
 
-<img width="1390" height="567" alt="assest list" src="https://github.com/user-attachments/assets/d6e9776d-7bc1-4b5b-a198-0b1061191809" />
+<img width="1632" height="668" alt="assest list2" src="https://github.com/user-attachments/assets/1f93d847-0d02-4161-9960-4a38718b390e" />
 
 
 
