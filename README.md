@@ -90,11 +90,26 @@ I use **MobaXterm** to access all of my nodes by establishing SSH connections:
 <img width="1679" height="525" alt="mobaxterm3" src="https://github.com/user-attachments/assets/8eccee8c-fb53-4d38-9fe9-9f5f6416fd07" />
 
 
+____________________________________________________________________________
+
+
+i use Ansible to manage my nodes because its agentless and its way more easier than other alternatives.
+
+ive divided my nodes into 4 groups, and this is 
+
+my inventory list, `hosts`:
 
 
 
+<img width="554" height="405" alt="hosts" src="https://github.com/user-attachments/assets/9a26a22c-9232-478d-b7e8-a607c5e9b6e2" />
 
 
+using `ping` module to check the connectivity from WSL to all machines:
+
+
+<img width="620" height="780" alt="ping" src="https://github.com/user-attachments/assets/001afd72-c6ea-4d18-9bd0-6b5e06268b43" />
+
+`pong` is received.
 
 
 
