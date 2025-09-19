@@ -109,7 +109,7 @@ my inventory list, `hosts`:
 after sharing my WSL public key to all nodes, its time to 
 
 
-using `ping` module to check the connectivity from contorl node to all machines:
+using `ping` module to check the connectivity from control node to all machines:
 
 
 <img width="620" height="780" alt="ping" src="https://github.com/user-attachments/assets/001afd72-c6ea-4d18-9bd0-6b5e06268b43" />
@@ -407,6 +407,72 @@ Server side is ready.
 
 ### Client side
 ----------------------------------------------------------------------------------------------------------
+
+
+
+after installing the required packages, `libnss-ldap`, `libpam-ldap`, `ldap-utils`, `nslcd`
+
+and set the values:
+
+ldap server URI: `ldap://192.168.1.30/`
+
+ldap search base: `dc=slab`
+
+bind DN: `cn=admin,dc=slab`
+
+
+its time to configure name server swith:
+
+`/etc/nsswitch.conf`:
+
+
+<img width="781" height="511" alt="nssiwtch40" src="https://github.com/user-attachments/assets/9d55e736-a099-4dc9-ae57-bc7b9f6d71ad" />
+
+
+and NSLCD:
+
+`/etc/nslcd.conf`:
+
+
+<img width="961" height="389" alt="nslcd30" src="https://github.com/user-attachments/assets/65d5f331-3405-413d-8905-313b1c6f2e6a" />
+
+
+now ipdating PAM config and enabling `Unix authentication` and `LDAP Authentication`:
+
+
+<img width="1577" height="543" alt="pam30" src="https://github.com/user-attachments/assets/20244736-026b-4f3e-b585-2dbbec47d86b" />
+
+
+client settings are finished, now a test for resolving users and groups data and switching to other users:
+
+
+
+
+<img width="507" height="338" alt="test30" src="https://github.com/user-attachments/assets/30d48ff8-9bac-4d4b-b286-9c658e8af6ab" />
+
+
+
+it working fine.
+
+
+and like this, other nodes are set to use this server for authentication.
+
+
+LDAP Server is ready.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
