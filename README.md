@@ -462,23 +462,6 @@ LDAP Server is ready.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </details> 
 
 
@@ -530,17 +513,21 @@ File Server is ready.
 
 <details> 
  
-<summary> Suricata </summary>
-
-</details> 
-
-<details> 
- 
 <summary> NTP </summary>
 
 </details> 
 
 
+<details> 
+ 
+<summary> Suricata </summary>
+
+this is a separate personal project and is not related to the LPIC-2 topics, so i dont get into the details.
+
+
+[Set-up basic Suricata](https://github.com/sinae99/set-up-basic-Suricata)
+
+</details> 
 
 
 
