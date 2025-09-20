@@ -116,6 +116,8 @@ using `ping` module to check the connectivity from control node to all machines:
 
 `pong` is received.
 
+Control Node is ready.
+
 
 
 </details>
@@ -174,10 +176,6 @@ configs looks good, now time to check the sites.
 because im using ubuntu server i dont have GUI so i use `lynx` to view my sites in terminal:
 
 <img width="616" height="125" alt="lynx" src="https://github.com/user-attachments/assets/3573e729-50cb-47cc-9669-22411baf2b97" />
-
-`sina-personal-page.slab`
- 
-<img width="1290" height="935" alt="sina" src="https://github.com/user-attachments/assets/4c2efaad-6d1d-4487-ac23-dc37cf1b688b" />
 
 `nginx-default.slab`
 
