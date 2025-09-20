@@ -515,6 +515,47 @@ File Server is ready.
  
 <summary> NTP </summary>
 
+
+after installing the `chrony` its time to modify the config file, `/etc/chrony/chrony.conf`:
+
+
+<img width="785" height="407" alt="chrony conf" src="https://github.com/user-attachments/assets/7882fe40-8b55-4690-bd26-472179eb1ff8" />
+
+now server is reeady, for clients i just need to tell each machine to use `mate24` as their ntp server.
+
+
+an example of client configuration at `/etc/chrony/chrony.conf`:
+
+<img width="630" height="304" alt="clientconf" src="https://github.com/user-attachments/assets/2a909b93-997f-43d3-aa73-f766a65ecfc4" />
+
+
+now for the rest of the nodes, i use ansible to aviod config them one by one:
+
+`client_ntp.yaml` is my play for this task:
+
+<img width="718" height="730" alt="clientsyaml" src="https://github.com/user-attachments/assets/d906a741-72ec-4045-9b43-61c51f120e68" />
+
+
+now running this with:
+```
+ansible-playbook -i hosts client_ntp.yaml
+```
+
+<img width="1270" height="553" alt="play" src="https://github.com/user-attachments/assets/4f3c6bf2-da81-40f5-9228-c2a79f77e0e3" />
+
+
+now a check from another machines:
+
+
+<img width="1002" height="273" alt="test1" src="https://github.com/user-attachments/assets/697c7c87-4fab-4079-842c-1a05ac9287b0" />
+
+
+<img width="917" height="250" alt="test2" src="https://github.com/user-attachments/assets/69c9bd90-e7d3-4e52-9fc4-dbd647dbb2e9" />
+
+
+Time Server is ready.
+
+
 </details> 
 
 
