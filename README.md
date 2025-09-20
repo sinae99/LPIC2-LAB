@@ -427,7 +427,7 @@ its time to configure name server swith:
 <img width="781" height="511" alt="nssiwtch40" src="https://github.com/user-attachments/assets/9d55e736-a099-4dc9-ae57-bc7b9f6d71ad" />
 
 
-and NSLCD:
+and NSLCD (a service that handles LDAP lookups for a system):
 
 `/etc/nslcd.conf`:
 
@@ -435,7 +435,7 @@ and NSLCD:
 <img width="961" height="389" alt="nslcd30" src="https://github.com/user-attachments/assets/65d5f331-3405-413d-8905-313b1c6f2e6a" />
 
 
-now ipdating PAM config and enabling `Unix authentication` and `LDAP Authentication`:
+now updating PAM config and enabling `Unix authentication` and `LDAP Authentication`:
 
 
 <img width="1577" height="543" alt="pam30" src="https://github.com/user-attachments/assets/20244736-026b-4f3e-b585-2dbbec47d86b" />
