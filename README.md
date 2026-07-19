@@ -244,9 +244,6 @@ now a test from other machines, for example from 192.168.1.10:
 
 <img width="665" height="775" alt="test1" src="https://github.com/user-attachments/assets/c5e39727-7ac4-428b-9ddf-ecce5ce35624" />
 
-or with a basic script to test them all at once: 
-
-<img width="737" height="502" alt="test3" src="https://github.com/user-attachments/assets/a61f1011-1522-447a-9186-f27c60a04aed" />
 
 or from win11:
 
