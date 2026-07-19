@@ -93,7 +93,7 @@ I use **MobaXterm** to access all of my nodes by establishing SSH connections:
 ____________________________________________________________________________
 
 
-i use Ansible to manage my nodes because its agentless and its way more easier than other alternatives.
+i use Ansible to manage my nodes.
 
 
 ive divided my nodes into 4 groups, and this is 
